@@ -14,10 +14,10 @@ const Post = new Schema({
     ref: 'user',
     required: true
   },
-  comments: {
+  comments: [{
     type: Schema.Types.ObjectId
     ref:'comments'
-  }
-})
+  }]
+}, {timestamps: true }) 
 
 module.exports = model('post', Post)
