@@ -11,8 +11,8 @@ const Comments = new Schema({
     required: true
   },
   posts: {
-    type: Schema.Types.ObjectId
-    ref: 'post'
+    type: Schema.Types.ObjectId,
+    ref: 'post',
     required: true
   }
 }, {timestaps: true})

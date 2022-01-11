@@ -15,7 +15,7 @@ const Post = new Schema({
     required: true
   },
   comments: [{
-    type: Schema.Types.ObjectId
+    type: Schema.Types.ObjectId,
     ref:'comments'
   }]
 }, {timestamps: true }) 
