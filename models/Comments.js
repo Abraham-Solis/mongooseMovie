@@ -13,6 +13,7 @@ const Comments = new Schema({
   posts: {
     type: Schema.Types.ObjectId
     ref: 'post'
+    required: true
   }
 }, {timestaps: true})
 
