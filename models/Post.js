@@ -13,6 +13,10 @@ const Post = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'user',
     required: true
+  },
+  comments: {
+    type: Schema.Types.ObjectId
+    ref:'comments'
   }
 })
 
